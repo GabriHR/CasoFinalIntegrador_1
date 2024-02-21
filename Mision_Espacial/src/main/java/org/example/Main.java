@@ -1,4 +1,5 @@
 package org.example;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -74,5 +75,18 @@ public class Main {
             System.out.println();
         }
 
+
+        //Comunicador_Interplanetario
+        Comunicador_Interplanetario comunicador = new Comunicador_Interplanetario();
+        String mensaje = "Hola, este mensaje está siendo enviado desde la Tierra";
+        String mensajeTraducido = comunicador.analizarYTraducirMensaje(mensaje);
+        int numVocales = comunicador.contarVocales(mensajeTraducido);
+        String mensajeInvertido = comunicador.invertirMensaje(mensajeTraducido);
+        boolean esIntegro = comunicador.verificarIntegridad(mensajeTraducido);
+
+        System.out.println("Mensaje traducido: " + mensajeTraducido);
+        System.out.println("Número de vocales: " + numVocales);
+        System.out.println("Mensaje invertido: " + mensajeInvertido);
+        System.out.println("Es el mensaje íntegro: " + esIntegro);
     }
 }
