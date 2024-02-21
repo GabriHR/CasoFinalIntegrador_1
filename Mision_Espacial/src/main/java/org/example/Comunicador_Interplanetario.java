@@ -1,6 +1,5 @@
 package org.example;
 
-import java.util.Scanner;
 public class Comunicador_Interplanetario{
     public String analizarYTraducirMensaje(String mensaje) {
         // Analizar y traducir el mensaje
