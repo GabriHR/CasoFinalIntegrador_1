@@ -20,3 +20,10 @@
  4. Planificador de Tareas:
  5. Navegador Estelar: usa las matrices o arrays para almacenar los datos y para mostrar al usuario los elementos requeridos respecto de las rutas y construcciones, multiplica dichos matrices.
  6. Comunicador Interplanetario: hace uso de un bucle for que recorre todas las vocales y más adelante devuelve el número de vocales que contiene el mensaje. 
+
+### Desafíos encontrados durante el desarrollo y cómo se resolvieron
+
+Principalmente, el mayor desafío en la elaboración del proyecto de código de Java, no fue otro más que el uso correcto de los módulos y su disposición. Con esto me quiero referir, a que a la hora de escribir el código, no ha habido problema ninguno. En caso de haberlo habido, hubiese buscado información extra de repositorios en github. Pero lo que si me gustaría recalcar, es la complejidad que supone, el una vez redactado el código, que sea legible, esté ordenado y no sea un cúmulo de letras sin sentido alguno.
+
+Para ello he creado una solo módulo, que contiene diversos archivos, implementado. Estos archivos estan todos dentro de otra carpeta llamada "org.example" debido a la sintaxis del build system. 
+He decidido organizarlo de tal manera que, en cada .java, almacenaba todos los datos y variables, métodos y clases necesarios para su ejecución y, posteriormente, en un archivo Main.java, el código necesario para mostrar por pantalla al usuario en cuestión los datos ya definidos en los demás archivos. He decidido hacerlo de esta manera ya que me parece una manera fácil pero a la vez rebuscada para el programador, que merece la pena porque proporciona una claridad y sencillez para el usuario a la hora de acceder, leer y buscar dentro del código.
