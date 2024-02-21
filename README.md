@@ -27,3 +27,7 @@
    
    Para ello he creado una solo módulo, que contiene diversos archivos, implementado. Estos archivos estan todos dentro de otra carpeta llamada "org.example" debido a la sintaxis del build system. 
    He decidido organizarlo de tal manera que, en cada .java, almacenaba todos los datos y variables, métodos y clases necesarios para su ejecución y, posteriormente, en un archivo Main.java, el código necesario para mostrar por pantalla al usuario en cuestión los datos ya definidos en los demás archivos. He decidido hacerlo de esta manera ya que me parece una manera fácil pero a la vez rebuscada para el programador, que merece la pena porque proporciona una claridad y sencillez para el usuario a la hora de acceder, leer y buscar dentro del código.
+
+### - Instrucciones de uso y casos de prueba para demostrar 
+
+Dentro del proyecto, esta todo lo necesario para comprender el código de forma correcta. Para utilizar dicho código, el usuario debe de tener claro que lo que realmente interesa es lo que se le muestra por pantalla dicho código. Para poder visualizar los resultados de dicho código, simplemente debería compilarlo/ejercutarlo, y dicho programa mostraria al usuario los resultados esperados.
