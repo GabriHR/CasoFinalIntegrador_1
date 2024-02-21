@@ -13,7 +13,6 @@ public class Cronometro_Cosmico {
         double dias = tiempo;
         double anos = tiempo / 365.25;
         //Devuelve el tiempo formateado
-        return String.format("Segundos: %.2f, Minutos: %.2f, Horas: %.2f, Días: %.2f, Años: %.2f",
-                segundos, minutos, horas, dias,anos);
+        return String.format("Segundos: %.2f, Minutos: %.2f, Horas: %.2f, Días: %.2f, Años: %.2f", segundos, minutos, horas, dias,anos);
     }
 }
