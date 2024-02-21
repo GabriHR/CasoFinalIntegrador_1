@@ -1,6 +1,7 @@
 package org.example;
 import java.util.Arrays;
-
+import java.util.HashMap;
+import java.util.Map;
 public class Main {
     public static void main(String[] args) {
 
@@ -34,9 +35,16 @@ public class Main {
         monitoreo.identificarEventosRaros();
         monitoreo.descomponerEnFactoresPrimos();
 
+        //Planificador_de_Tareas
+        Planificador_de_Tareas planificador = new Planificador_de_Tareas();
+        planificador.visualizarTablaTareas(5);
+        Map<String, Integer> tareas = new HashMap<>();
+        tareas.put("Miembro1", 5);
+        tareas.put("Miembro2", 7);
+        Map<String, Integer> capacidad = new HashMap<>();
+        capacidad.put("Miembro1", 2);
+        capacidad.put("Miembro2", 3);
+        System.out.println("Carga de trabajo óptima: " + planificador.calcularCargaTrabajo(tareas, capacidad));
+
     }
 }
-
-
-
-
