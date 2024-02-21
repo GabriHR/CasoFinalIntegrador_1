@@ -53,4 +53,11 @@ public class Recursos_y_Suministros {
         return new double[]{promedio, min, max};
     }
 
+    public void imprimirValores() {
+        System.out.println("Valores de los recursos:");
+        for (double recurso : recursos) {
+            System.out.println(recurso);
+        }
+        System.out.println("Umbral seguro: " + umbralSeguro);
+    }
 }
