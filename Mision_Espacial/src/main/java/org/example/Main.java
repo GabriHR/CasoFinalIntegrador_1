@@ -2,6 +2,7 @@ package org.example;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -45,6 +46,33 @@ public class Main {
         capacidad.put("Miembro1", 2);
         capacidad.put("Miembro2", 3);
         System.out.println("Carga de trabajo óptima: " + planificador.calcularCargaTrabajo(tareas, capacidad));
+
+
+        //Navegador_Estelar
+        Navegador_Estelar explorador = new Navegador_Estelar(5, 5);
+        int[][] construcciones = {
+                {0, 1, 1, 0, 0},
+                {0, 0, 1, 1, 0},
+                {1, 1, 0, 0, 0},
+                {0, 1, 1, 0, 0},
+                {0, 0, 0, 1, 1}
+        };
+        explorador.planificarConstrucciones(construcciones);
+        int[][] rutas = {
+                {1, 0, 1, 1, 0},
+                {0, 1, 0, 1, 1},
+                {1, 0, 1, 0, 1},
+                {1, 1, 0, 1, 0},
+                {1, 0, 1, 0, 1}
+        };
+        int[][] optimizado = explorador.optimizarRutasYRecursos(rutas);
+        System.out.println("Terreno optimizado:");
+        for (int i = 0; i < optimizado.length; i++) {
+            for (int j = 0; j < optimizado[i].length; j++) {
+                System.out.print(optimizado[i][j] + " ");
+            }
+            System.out.println();
+        }
 
     }
 }
