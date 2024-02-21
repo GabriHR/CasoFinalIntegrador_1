@@ -1,6 +1,6 @@
 package org.example;
-
 import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -26,6 +26,13 @@ public class Main {
         System.out.println("Alerta de umbral seguro: " + alerta);
         double[] estadisticas = recursosObj.estadisticasUso();
         System.out.println("Estadísticas de uso: Promedio = " + estadisticas[0] + ", Mínimo = " + estadisticas[1] + ", Máximo = " + estadisticas[2]);
+
+        //Sistema_Alerta_y_Monitoreo
+        int[] variablesAmbientales = {10, 20, 30, 40, 41};
+        Sistema_Alerta_y_Monitoreo monitoreo = new Sistema_Alerta_y_Monitoreo(variablesAmbientales);
+        monitoreo.monitorearVariables();
+        monitoreo.identificarEventosRaros();
+        monitoreo.descomponerEnFactoresPrimos();
 
     }
 }
